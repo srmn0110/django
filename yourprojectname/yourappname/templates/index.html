@@ -20,7 +20,7 @@
 
             <div class="col-md-6">
                 <h2 class="mb-4">Form:</h2>
-                <form action="http://127.0.0.1:8000/" method="POST" enctype="multipart/form-data">
+                <form  method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     
                     <div class="form-group">
@@ -52,5 +52,20 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        // Get the current Codespace URL dynamically
+        const currentUrl = window.location.href;
+
+        // Set the form action attribute dynamically
+        const form = document.getElementById("dynamicForm");
+        form.action = currentUrl;
+
+        // Optional: You can log the current URL to the console for verification
+        console.log("Current URL:", currentUrl);
+    </script>
+
+
 </body>
 </html>

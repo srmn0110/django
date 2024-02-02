@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 import base64
 from PIL import Image #,ImageFilter
