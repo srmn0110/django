@@ -1,0 +1,7 @@
+Django==4.2.1  # Replace with the desired Django version
+easyocr==1.4.5  # Replace with the desired EasyOCR version
+Pillow==9.3.0  # Required for Image processing
+opencv-python==4.7.0.68  # Required for OpenCV
+numpy==1.25.0  # Required for numerical computations
+matplotlib==3.6.2  # Required for plotting (if used)
+djangorestframework==3.14.0  # Required for REST API functionality
